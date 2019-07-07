@@ -38,6 +38,12 @@ export default class CreateTodo extends Component {
         });
     }
 
+    onChangeTodoCompleted(e) {
+        this.setState({
+            todo_completed: !this.state.todo_completed
+        });
+    }
+
     onSubmit(e) {
         e.preventDefault();
 
